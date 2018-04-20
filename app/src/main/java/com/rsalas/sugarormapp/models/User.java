@@ -6,6 +6,8 @@ import com.orm.dsl.Table;
 public class User {
 
     private Long id;
+    private String username;
+//    prueba
     private String fullname;
     private String email;
     private String password;
@@ -13,11 +15,13 @@ public class User {
     public User() {
     }
 
-    public User(String fullname, String email, String password) {
+    public User(String username, String fullname, String email, String password) {
+        this.username = username;
         this.fullname = fullname;
         this.email = email;
         this.password = password;
     }
+
 
     public Long getId() {
         return id;
@@ -26,6 +30,10 @@ public class User {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public String getUsername() {return username;}
+
+    public void setUsername(String username) {this.username = username;}
 
     public String getFullname() {
         return fullname;
@@ -55,6 +63,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
+                ", username='" + username + '\'' +
                 ", fullname='" + fullname + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +

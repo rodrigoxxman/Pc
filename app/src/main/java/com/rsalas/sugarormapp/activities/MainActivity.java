@@ -50,5 +50,8 @@ public class MainActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
     }
-
+    public void callIndex(View view){
+        Intent intent = new Intent(this, IndexActivity.class);
+        startActivity(intent);
+    }
 }

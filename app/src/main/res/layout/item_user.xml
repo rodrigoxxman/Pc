@@ -33,11 +33,21 @@
             android:text="Fullname"/>
 
         <TextView
-            android:id="@+id/email_text"
+            android:id="@+id/username_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/picture_image"
             android:layout_below="@+id/fullname_text"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:text="Username"/>
+
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/picture_image"
+            android:layout_below="@+id/username_text"
             android:layout_marginBottom="8dp"
             android:textSize="16sp"
             android:text="Email"/>
