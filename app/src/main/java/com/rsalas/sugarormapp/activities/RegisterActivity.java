@@ -1,4 +1,5 @@
 package com.rsalas.sugarormapp.activities;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -33,8 +34,8 @@ public class RegisterActivity extends AppCompatActivity {
         String email = emailInput.getText().toString();
         String password = passwordInput.getText().toString();
 
-        if(fullname.isEmpty() || email.isEmpty() || password.isEmpty()){
-            Toast.makeText(this, "You must complete these fields", Toast.LENGTH_SHORT).show();
+        if(username.isEmpty() || fullname.isEmpty() || email.isEmpty() || password.isEmpty()){
+            Toast.makeText(this, "Tienes que completar estos campos", Toast.LENGTH_SHORT).show();
             return;
         }
 

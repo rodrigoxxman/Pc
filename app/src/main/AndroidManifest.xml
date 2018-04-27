@@ -31,7 +31,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.RegisterActivity" />
-        <activity android:name=".activities.IndexActivity"></activity>
+        <activity android:name=".activities.IndexActivity" />
+        <activity android:name=".activities.RegisterProductActivity"></activity>
     </application>
 
 </manifest>
